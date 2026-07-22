@@ -6,7 +6,7 @@ import java.util.List;
 
 public class mainModel {
 	
-	Vehicle[] database = {(new Vehicle("abc123", 5, "gas", "ford", "fiesta", 2012, "automatic", 200)), new Vehicle("def456", 2, "electric", "tesla", "roadster", 2008, "automatic", 3000),
+	public Vehicle[] database = {(new Vehicle("abc123", 5, "gas", "ford", "fiesta", 2012, "automatic", 200)), new Vehicle("def456", 2, "electric", "tesla", "roadster", 2008, "automatic", 3000),
 			(new Vehicle("ghi789", 9, "gas", "volkswagen", "type2", 1970, "manual", 1000)), new Vehicle("jkl000", 5, "diesel", "volvo", "xc60", 2026, "automatic", 2000)};
 
 	public List<Vehicle> filterVehicles(String[] input) {
