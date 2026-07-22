@@ -25,7 +25,7 @@ public class Vehicle {
 		avalibility = true;
 	}
 	public String toString() {
-		return "ID:\t" + vehicleID  + "Make:\t" + make + "Model:\t" + model + "Year:\t" + year + "Is Avalibile:\t" + avalibility + 
-				"\nSeat Number:\t" + seatCapacity + "Fuel:\t" + fuelType + "Transmission:\t" + transmissionType + "Price:\t" + retailPrice;
+		return "ID:\t\t" + vehicleID  + "\tMake:\t" + make + "\tModel:\t" + model + "\tYear:\t" + year + "\tIs Avalibile:\t" + avalibility + 
+				"\nSeat Number:\t" + seatCapacity + "\tFuel:\t" + fuelType + "\tTransmission:\t" + transmissionType + "\tPrice:\t" + retailPrice;
 	}
 }

@@ -19,12 +19,12 @@ public class main {
 		userInput = sanatizeInput(view.recieveInput());
 		commandInput = userInput[0];
 		
-		while(commandInput != "close") {
-			System.out.println(commandInput);
+		while(!commandInput.equals("close")) {
+			//System.out.println(commandInput);
 			try {
 				if(commandInput.equals("filter")) {
-					if(userInput.length != 6)
-						throw new IllegalArgumentException("expected filter input is\n"
+					if(userInput.length != 11)
+						throw new IllegalArgumentException("expected filter input is"
 								+ "\n\'filter, vehicle ID, minimum seats, maximum seats, fuel type, make, model, year, transmission type, minimum price, maximum price\'"
 								+ "\nleave blank inbetween commas to ignore that filter");
 					List<Vehicle> temp = model.filterVehicles(userInput);
