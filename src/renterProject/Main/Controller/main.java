@@ -24,7 +24,9 @@ public class main {
 			try {
 				if(commandInput.equals("filter")) {
 					if(userInput.length != 6)
-						throw new IllegalArgumentException("expected filter input is \'filter, minimum seat number, maximum seat number, fuel type, make, model\' leave blank inbetween commas for any");
+						throw new IllegalArgumentException("expected filter input is\n"
+								+ "\n\'filter, vehicle ID, minimum seats, maximum seats, fuel type, make, model, year, transmission type, minimum price, maximum price\'"
+								+ "\nleave blank inbetween commas to ignore that filter");
 					List<Vehicle> temp = model.filterVehicles(userInput);
 					if(!temp.isEmpty())
 						for(Vehicle i : temp)
